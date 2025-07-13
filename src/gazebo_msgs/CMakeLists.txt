@@ -90,7 +90,8 @@ target_include_directories(gazebo_msgs
         $<INSTALL_INTERFACE:include>)
 
 target_link_libraries(gazebo_msgs
-    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost)
+    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost
+    geometry_msgs)
 
 target_compile_definitions(gazebo_msgs
     PUBLIC DDSCXX_NO_STD_OPTIONAL)

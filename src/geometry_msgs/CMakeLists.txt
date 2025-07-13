@@ -90,7 +90,9 @@ target_include_directories(geometry_msgs
         $<INSTALL_INTERFACE:include>)
 
 target_link_libraries(geometry_msgs
-    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost)
+    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost
+    std_msgs
+    )
 
 target_compile_definitions(geometry_msgs
     PUBLIC DDSCXX_NO_STD_OPTIONAL)
