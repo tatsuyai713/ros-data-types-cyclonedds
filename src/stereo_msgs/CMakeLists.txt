@@ -90,7 +90,9 @@ target_include_directories(stereo_msgs
         $<INSTALL_INTERFACE:include>)
 
 target_link_libraries(stereo_msgs
-    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost)
+    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost
+    sensor_msgs
+    )
 
 target_compile_definitions(stereo_msgs
     PUBLIC DDSCXX_NO_STD_OPTIONAL)

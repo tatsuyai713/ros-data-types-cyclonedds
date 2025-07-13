@@ -89,7 +89,9 @@ target_include_directories(diagnostic_msgs
         $<INSTALL_INTERFACE:include>)
 
 target_link_libraries(diagnostic_msgs
-    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost)
+    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost
+    std_msgs
+    )
 
 target_compile_definitions(diagnostic_msgs
     PUBLIC DDSCXX_NO_STD_OPTIONAL)

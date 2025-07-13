@@ -90,7 +90,9 @@ target_include_directories(rcl_interfaces
         $<INSTALL_INTERFACE:include>)
 
 target_link_libraries(rcl_interfaces
-    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost)
+    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost
+    builtin_interfaces
+    )
 
 target_compile_definitions(rcl_interfaces
     PUBLIC DDSCXX_NO_STD_OPTIONAL)

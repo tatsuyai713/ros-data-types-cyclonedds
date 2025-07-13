@@ -14,7 +14,7 @@
  * limitations under the License. 
  */ 
  
-#include "ContactState.idl" 
+#include "gazebo_msgs/msg/ContactState.idl" 
 #include "std_msgs/msg/Header.idl" 
  
 module gazebo_msgs { module msg { 

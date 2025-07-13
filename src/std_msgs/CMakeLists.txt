@@ -90,7 +90,9 @@ target_include_directories(std_msgs
         $<INSTALL_INTERFACE:include>)
 
 target_link_libraries(std_msgs
-    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost)
+    PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost
+    builtin_interfaces
+    )
 
 target_compile_definitions(std_msgs
     PUBLIC DDSCXX_NO_STD_OPTIONAL)
