@@ -187,6 +187,12 @@ install(DIRECTORY ${CMAKE_BINARY_DIR}/generated/
         FILES_MATCHING PATTERN "*.hpp"
         )
 
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
+        DESTINATION include/${PROJECT_NAME}
+        FILES_MATCHING PATTERN "*.idl"
+)
+
+
 # make <pkg> root dirs visible to consumers
 file(GLOB CHILD_PKG_DIRS LIST_DIRECTORIES TRUE
      "${CMAKE_BINARY_DIR}/generated/*")
