@@ -87,7 +87,7 @@ foreach(IDL_FILE IN LISTS ORIGINAL_IDL_FILES)
                 idlc -l cxx -fcase-sensitive
                     ${IDL_INC_ARGS}
                     "${IDL_FILE}"
-        COMMAND sed -i "s|return \\\"${PKG_NAME}::${SUBDIR_NAME}::${IDL_BASENAME}\\\";|return \\\"${PKG_NAME}::${SUBDIR_NAME}::dds_::${IDL_BASENAME}_\\\";|g" "${GEN_HPP}"
+        COMMAND sed -E -i "s|(return[[:space:]]*\")([[:alnum:]_]+::${SUBDIR_NAME}::)(${IDL_BASENAME})(\";)|\\1\\2dds_::\\3_\\4|" "${GEN_HPP}"
         DEPENDS "${IDL_FILE}"
         COMMENT "Generating ${IDL_BASENAME}"
         VERBATIM
