@@ -101,7 +101,7 @@ endforeach()
 # ------------------------------------------------------------
 add_custom_target(update_headers_target_visualization_msgs
     COMMAND ${CMAKE_COMMAND} -E echo "Running update_headers.sh"
-    COMMAND ${CMAKE_COMMAND} -E env bash ${CMAKE_BINARY_DIR}/../../scripts/update_headers.sh
+    COMMAND ${CMAKE_COMMAND} -E env bash ${CMAKE_CURRENT_SOURCE_DIR}/../../scripts/update_headers.sh
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/generated/visualization_msgs
     DEPENDS visualization_msgs_generate_initial
     COMMENT "Updating header files with CycloneDX C++ compatibility"
