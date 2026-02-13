@@ -163,6 +163,49 @@ find "$folder_path" -type f -name "*.hpp" | while read -r file_path; do
     echo "Modified the file $file_name"
 done
 
+# ----------------------------------------------------------------
+# Fix for case-insensitive filesystems (e.g., macOS mounted volumes)
+# On case-insensitive FS, idlc may overwrite snake_case wrappers
+# when regenerating PascalCase files (Image.hpp == image.hpp).
+# This pass ensures all wrappers contain the correct wrapper content.
+# ----------------------------------------------------------------
+echo "Ensuring snake_case wrappers are correct..."
+find "$folder_path" -type f -name "*_cyclone.hpp" | while read -r cyclone_file; do
+    base_name=$(basename "$cyclone_file" "_cyclone.hpp")
+    directory_path=$(dirname "$cyclone_file")
+
+    # Skip files that don't have an uppercase letter (shouldn't happen, but guard)
+    if [[ ! "$base_name" =~ [A-Z] ]]; then
+        continue
+    fi
+
+    snake_name=$(camel_to_snake "$base_name")
+    snake_file="$directory_path/${snake_name}.hpp"
+
+    # If the snake_case file is identical to the PascalCase name, skip
+    # (e.g., a single-lowercase-word class — unlikely but safe)
+    if [ "$snake_name" = "$base_name" ]; then
+        continue
+    fi
+
+    directory_name=$(basename "$directory_path")
+    parent_path=$(dirname "$directory_path")
+    parent_directory_path=$(basename "$parent_path")
+    include_guard=$(echo "${parent_directory_path}__${directory_name}__${snake_name}.hpp" | tr '[:lower:]' '[:upper:]' | tr '/' '_' | tr '.' '_')
+
+    # (Re)create the wrapper — idempotent
+    {
+    echo "#ifndef ${include_guard}"
+    echo "#define ${include_guard}"
+    echo ""
+    echo "#include \"dds/dds.hpp\""
+    echo "#include \"${base_name}_cyclone.hpp\""
+    echo ""
+    echo "#endif  // ${include_guard}"
+    } > "$snake_file"
+    echo "Ensured wrapper: ${snake_name}.hpp -> ${base_name}_cyclone.hpp"
+done
+
 # サービス用のリクエスト/レスポンス処理
 echo "Creating service files..."
 find "$folder_path" -type f -name "*_Request_cyclone.hpp" | while read -r request_file_path; do
