@@ -19,3 +19,5 @@ add_subdirectory(test_msgs)
 add_subdirectory(tf2_msgs)
 add_subdirectory(visualization_msgs)
 add_subdirectory(rcl_interfaces)
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/rosidl_runtime_cpp DESTINATION include/)
