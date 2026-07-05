@@ -36,4 +36,4 @@ struct LaserScan {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__LaserScan__idl 
+#endif

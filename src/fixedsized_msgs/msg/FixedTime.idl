@@ -1,0 +1,13 @@
+#ifndef __fixedsized_msgs__msg__FixedTime__idl
+#define __fixedsized_msgs__msg__FixedTime__idl
+
+module fixedsized_msgs { module msg {
+
+struct FixedTime {
+    long sec;
+    unsigned long nanosec;
+};
+
+}; };  // module msg::fixedsized_msgs
+
+#endif

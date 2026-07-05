@@ -28,4 +28,4 @@ struct TwistWithCovariance {
  
 }; };  // module msg::geometry_msgs 
  
-#endif  // __geometry_msgs__msg__TwistWithCovariance__idl 
+#endif

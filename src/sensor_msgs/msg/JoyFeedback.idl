@@ -31,4 +31,4 @@ struct JoyFeedback {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__JoyFeedback__idl 
+#endif

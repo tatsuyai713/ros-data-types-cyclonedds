@@ -62,4 +62,4 @@ struct BatteryState {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__BatteryState__idl 
+#endif

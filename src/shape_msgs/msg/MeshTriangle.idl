@@ -25,4 +25,4 @@ struct MeshTriangle {
  
 }; };  // module msg::shape_msgs 
  
-#endif  // __shape_msgs__msg__MeshTriangle__idl 
+#endif

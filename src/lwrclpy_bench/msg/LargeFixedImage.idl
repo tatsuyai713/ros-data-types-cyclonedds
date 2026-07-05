@@ -1,0 +1,13 @@
+#ifndef __lwrclpy_bench__msg__LargeFixedImage__idl
+#define __lwrclpy_bench__msg__LargeFixedImage__idl
+
+module lwrclpy_bench { module msg {
+
+struct LargeFixedImage {
+    unsigned long seq;
+    octet data[2073600];
+};
+
+}; };  // module msg::lwrclpy_bench
+
+#endif

@@ -1,0 +1,15 @@
+#ifndef __unique_identifier_msgs__msg__UUID__idl
+#define __unique_identifier_msgs__msg__UUID__idl
+
+module unique_identifier_msgs
+{
+  module msg
+  {
+    struct UUID
+    {
+      sequence<uint8, 16> uuid;
+    };
+  };
+};
+
+#endif

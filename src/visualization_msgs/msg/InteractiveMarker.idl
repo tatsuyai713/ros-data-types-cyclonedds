@@ -36,4 +36,4 @@ struct InteractiveMarker {
  
 }; };  // module msg::visualization_msgs 
  
-#endif  // __visualization_msgs__msg__InteractiveMarker__idl 
+#endif

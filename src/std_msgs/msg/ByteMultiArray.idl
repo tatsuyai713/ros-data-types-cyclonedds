@@ -28,4 +28,4 @@ struct ByteMultiArray {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__ByteMultiArray__idl 
+#endif

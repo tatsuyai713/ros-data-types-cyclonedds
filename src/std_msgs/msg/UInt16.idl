@@ -25,4 +25,4 @@ struct UInt16 {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__UInt16__idl 
+#endif

@@ -1,0 +1,21 @@
+#ifndef __fixedsized_msgs__msg__FixedImageQhdMono8__idl
+#define __fixedsized_msgs__msg__FixedImageQhdMono8__idl
+
+#include "FixedHeader.idl"
+#include "FixedString32.idl"
+
+module fixedsized_msgs { module msg {
+
+struct FixedImageQhdMono8 {
+    fixedsized_msgs::msg::FixedHeader header;
+    unsigned long height;
+    unsigned long width;
+    fixedsized_msgs::msg::FixedString32 encoding;
+    boolean is_bigendian;
+    unsigned long step;
+    octet data[3686400];
+};
+
+}; };  // module msg::fixedsized_msgs
+
+#endif

@@ -14,5 +14,4 @@ struct SetParameters {
 
 }; };  // module msg::rcl_interfaces 
 
-#endif  // __rcl_interfaces__msg__SetParameters__idl 
-
+#endif

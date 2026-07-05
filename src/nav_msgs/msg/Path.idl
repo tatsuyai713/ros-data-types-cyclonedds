@@ -29,4 +29,4 @@ struct Path {
  
 }; };  // module msg::nav_msgs 
  
-#endif  // __nav_msgs__msg__Path__idl 
+#endif

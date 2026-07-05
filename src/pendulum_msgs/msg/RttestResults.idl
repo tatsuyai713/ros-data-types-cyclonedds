@@ -37,4 +37,4 @@ struct RttestResults {
  
 }; };  // module msg::pendulum_msgs 
  
-#endif  // __pendulum_msgs__msg__RttestResults__idl 
+#endif

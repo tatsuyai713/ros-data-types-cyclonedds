@@ -1,0 +1,19 @@
+#ifndef __action_msgs__msg__GoalStatusArray__idl
+#define __action_msgs__msg__GoalStatusArray__idl
+
+#include "action_msgs/msg/GoalStatus.idl"
+#include "builtin_interfaces/msg/Time.idl"
+
+module action_msgs
+{
+  module msg
+  {
+    struct GoalStatusArray
+    {
+      builtin_interfaces::msg::Time stamp;
+      sequence<action_msgs::msg::GoalStatus> status_list;
+    };
+  };
+};
+
+#endif

@@ -36,4 +36,4 @@ struct DisparityImage {
  
 }; };  // module msg::stereo_msgs 
  
-#endif  // __stereo_msgs__msg__DisparityImage__idl 
+#endif

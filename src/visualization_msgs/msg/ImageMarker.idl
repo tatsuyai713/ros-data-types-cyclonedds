@@ -50,4 +50,4 @@ struct ImageMarker {
  
 }; };  // module msg::visualization_msgs 
  
-#endif  // __visualization_msgs__msg__ImageMarker__idl 
+#endif

@@ -27,4 +27,4 @@ struct TFMessage {
  
 }; };  // module msg::tf2_msgs 
  
-#endif  // __tf2_msgs__msg__TFMessage__idl 
+#endif

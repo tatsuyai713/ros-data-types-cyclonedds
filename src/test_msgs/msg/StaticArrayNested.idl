@@ -27,4 +27,4 @@ struct StaticArrayNested {
  
 }; };  // module msg::test_msgs 
  
-#endif  // __test_msgs__msg__StaticArrayNested__idl 
+#endif

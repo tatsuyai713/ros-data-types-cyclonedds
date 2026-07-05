@@ -49,4 +49,4 @@ struct InteractiveMarkerControl {
  
 }; };  // module msg::visualization_msgs 
  
-#endif  // __visualization_msgs__msg__InteractiveMarkerControl__idl 
+#endif

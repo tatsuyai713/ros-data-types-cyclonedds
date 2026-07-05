@@ -32,4 +32,4 @@ struct MultiDOFJointTrajectoryPoint {
  
 }; };  // module msg::trajectory_msgs 
  
-#endif  // __trajectory_msgs__msg__MultiDOFJointTrajectoryPoint__idl 
+#endif

@@ -30,4 +30,4 @@ struct MultiDOFJointTrajectory {
  
 }; };  // module msg::trajectory_msgs 
  
-#endif  // __trajectory_msgs__msg__MultiDOFJointTrajectory__idl 
+#endif

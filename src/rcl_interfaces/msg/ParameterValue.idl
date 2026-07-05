@@ -32,6 +32,5 @@ struct ParameterValue {
 
 }; };  // module msg::rcl_interfaces 
 
-#endif  // __rcl_interfaces__msg__ParameterValue__idl 
-
+#endif
 

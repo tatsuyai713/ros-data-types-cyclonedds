@@ -33,4 +33,4 @@ struct MenuEntry {
  
 }; };  // module msg::visualization_msgs 
  
-#endif  // __visualization_msgs__msg__MenuEntry__idl 
+#endif

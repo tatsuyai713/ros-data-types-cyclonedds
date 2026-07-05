@@ -25,4 +25,4 @@ struct UInt8 {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__UInt8__idl 
+#endif

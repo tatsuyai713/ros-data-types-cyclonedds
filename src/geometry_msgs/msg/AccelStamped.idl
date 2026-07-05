@@ -29,4 +29,4 @@ struct AccelStamped {
  
 }; };  // module msg::geometry_msgs 
  
-#endif  // __geometry_msgs__msg__AccelStamped__idl 
+#endif

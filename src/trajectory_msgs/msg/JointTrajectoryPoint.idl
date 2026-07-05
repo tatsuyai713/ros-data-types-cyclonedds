@@ -31,4 +31,4 @@ struct JointTrajectoryPoint {
  
 }; };  // module msg::trajectory_msgs 
  
-#endif  // __trajectory_msgs__msg__JointTrajectoryPoint__idl 
+#endif

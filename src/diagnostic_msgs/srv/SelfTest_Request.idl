@@ -25,4 +25,4 @@ struct SelfTest_Request {
  
 }; };  // module srv::diagnostic_msgs 
  
-#endif  // __diagnostic_msgs__srv__SelfTest_Request__idl__ 
+#endif

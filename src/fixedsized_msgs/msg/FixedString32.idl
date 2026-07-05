@@ -1,0 +1,13 @@
+#ifndef __fixedsized_msgs__msg__FixedString32__idl
+#define __fixedsized_msgs__msg__FixedString32__idl
+
+module fixedsized_msgs { module msg {
+
+struct FixedString32 {
+    unsigned long size;
+    octet data[32];
+};
+
+}; };  // module msg::fixedsized_msgs
+
+#endif

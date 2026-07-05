@@ -25,4 +25,4 @@ struct Float64 {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__Float64__idl 
+#endif

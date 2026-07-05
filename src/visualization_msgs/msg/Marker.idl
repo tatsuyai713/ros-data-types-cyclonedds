@@ -63,4 +63,4 @@ struct Marker {
  
 }; };  // module msg::visualization_msgs 
  
-#endif  // __visualization_msgs__msg__Marker__idl 
+#endif

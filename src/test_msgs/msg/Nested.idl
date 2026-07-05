@@ -27,4 +27,4 @@ struct Nested {
  
 }; };  // module msg::test_msgs 
  
-#endif  // __test_msgs__msg__Nested__idl 
+#endif

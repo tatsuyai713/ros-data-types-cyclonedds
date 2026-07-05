@@ -39,4 +39,4 @@ struct SolidPrimitive {
  
 }; };  // module msg::shape_msgs 
  
-#endif  // __shape_msgs__msg__SolidPrimitive__idl 
+#endif

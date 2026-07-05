@@ -27,4 +27,4 @@ struct Point32 {
  
 }; };  // module msg::geometry_msgs 
  
-#endif  // __geometry_msgs__msg__Point32__idl 
+#endif

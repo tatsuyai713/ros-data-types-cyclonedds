@@ -25,4 +25,4 @@ struct Int16 {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__Int16__idl 
+#endif

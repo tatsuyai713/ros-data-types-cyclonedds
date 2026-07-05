@@ -25,4 +25,4 @@ struct AddDiagnostics_Request {
  
 }; };  // module srv::diagnostic_msgs 
  
-#endif  // __diagnostic_msgs__srv__AddDiagnostics_Request__idl__ 
+#endif

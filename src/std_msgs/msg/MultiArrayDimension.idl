@@ -27,4 +27,4 @@ struct MultiArrayDimension {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__MultiArrayDimension__idl 
+#endif

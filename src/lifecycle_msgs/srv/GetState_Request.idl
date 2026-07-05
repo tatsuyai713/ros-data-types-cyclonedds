@@ -25,4 +25,4 @@ struct GetState_Request {
  
 }; };  // module srv::lifecycle_msgs 
  
-#endif  // __lifecycle_msgs__srv__GetState_Request__idl 
+#endif

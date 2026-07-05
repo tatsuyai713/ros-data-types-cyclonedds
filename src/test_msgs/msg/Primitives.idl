@@ -38,4 +38,4 @@ struct Primitives {
  
 }; };  // module msg::test_msgs 
  
-#endif  // __test_msgs__msg__Primitives__idl 
+#endif

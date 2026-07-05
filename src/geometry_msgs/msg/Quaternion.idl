@@ -28,4 +28,4 @@ struct Quaternion {
  
 }; };  // module msg::geometry_msgs 
  
-#endif  // __geometry_msgs__msg__Quaternion__idl 
+#endif

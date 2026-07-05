@@ -30,4 +30,4 @@ struct TimeReference {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__TimeReference__idl 
+#endif

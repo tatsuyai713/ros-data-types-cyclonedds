@@ -29,4 +29,4 @@ struct FluidPressure {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__FluidPressure__idl 
+#endif

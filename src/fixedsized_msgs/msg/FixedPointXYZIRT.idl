@@ -1,0 +1,18 @@
+#ifndef __fixedsized_msgs__msg__FixedPointXYZIRT__idl
+#define __fixedsized_msgs__msg__FixedPointXYZIRT__idl
+
+module fixedsized_msgs { module msg {
+
+struct FixedPointXYZIRT {
+    float x;
+    float y;
+    float z;
+    float intensity;
+    unsigned short ring;
+    unsigned short return_type;
+    float time;
+};
+
+}; };  // module msg::fixedsized_msgs
+
+#endif

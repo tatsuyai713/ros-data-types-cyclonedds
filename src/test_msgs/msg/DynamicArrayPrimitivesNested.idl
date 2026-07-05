@@ -27,4 +27,4 @@ struct DynamicArrayPrimitivesNested {
  
 }; };  // module msg::test_msgs 
  
-#endif  // __test_msgs__msg__DynamicArrayPrimitivesNested__idl 
+#endif

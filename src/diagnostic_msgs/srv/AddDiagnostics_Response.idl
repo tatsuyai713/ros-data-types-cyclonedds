@@ -26,4 +26,4 @@ struct AddDiagnostics_Response {
  
 }; };  // module srv::diagnostic_msgs 
  
-#endif  // __diagnostic_msgs__srv__AddDiagnostics_Response__idl__ 
+#endif

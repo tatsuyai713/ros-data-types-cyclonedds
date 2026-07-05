@@ -28,4 +28,4 @@ struct Float32MultiArray {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__Float32MultiArray__idl 
+#endif

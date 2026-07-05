@@ -37,4 +37,4 @@ struct PointField {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__PointField__idl 
+#endif

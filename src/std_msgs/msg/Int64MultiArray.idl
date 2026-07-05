@@ -28,4 +28,4 @@ struct Int64MultiArray {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__Int64MultiArray__idl 
+#endif

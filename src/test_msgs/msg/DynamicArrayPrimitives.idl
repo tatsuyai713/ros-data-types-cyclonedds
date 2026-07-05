@@ -39,4 +39,4 @@ struct DynamicArrayPrimitives {
  
 }; };  // module msg::test_msgs 
  
-#endif  // __test_msgs__msg__DynamicArrayPrimitives__idl 
+#endif

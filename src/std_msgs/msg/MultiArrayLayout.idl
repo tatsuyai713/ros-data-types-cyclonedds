@@ -28,4 +28,4 @@ struct MultiArrayLayout {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__MultiArrayLayout__idl 
+#endif

@@ -26,4 +26,4 @@ struct KeyValue {
  
 }; };  // module msg::diagnostic_msgs 
  
-#endif  // __diagnostic_msgs__msg__KeyValue__idl__ 
+#endif

@@ -27,4 +27,4 @@ struct BoundedArrayNested {
  
 }; };  // module msg::test_msgs 
  
-#endif  // __test_msgs__msg__BoundedArrayNested__idl 
+#endif

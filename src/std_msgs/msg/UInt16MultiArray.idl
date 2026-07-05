@@ -28,4 +28,4 @@ struct UInt16MultiArray {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__UInt16MultiArray__idl 
+#endif

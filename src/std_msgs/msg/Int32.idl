@@ -25,4 +25,4 @@ struct Int32 {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__Int32__idl 
+#endif

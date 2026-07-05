@@ -34,4 +34,4 @@ struct TF2Error {
  
 }; };  // module msg::tf2_msgs 
  
-#endif  // __tf2_msgs__msg__TF2Error__idl 
+#endif

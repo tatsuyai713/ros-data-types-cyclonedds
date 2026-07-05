@@ -25,4 +25,4 @@ struct LaserEcho {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__LaserEcho__idl 
+#endif

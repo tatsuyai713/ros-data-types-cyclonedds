@@ -28,4 +28,4 @@ struct Int8MultiArray {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__Int8MultiArray__idl 
+#endif

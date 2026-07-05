@@ -44,4 +44,4 @@ struct InteractiveMarkerFeedback {
  
 }; };  // module msg::visualization_msgs 
  
-#endif  // __visualization_msgs__msg__InteractiveMarkerFeedback__idl 
+#endif

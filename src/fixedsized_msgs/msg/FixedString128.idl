@@ -1,0 +1,13 @@
+#ifndef __fixedsized_msgs__msg__FixedString128__idl
+#define __fixedsized_msgs__msg__FixedString128__idl
+
+module fixedsized_msgs { module msg {
+
+struct FixedString128 {
+    unsigned long size;
+    octet data[128];
+};
+
+}; };  // module msg::fixedsized_msgs
+
+#endif

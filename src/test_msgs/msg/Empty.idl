@@ -25,4 +25,4 @@ struct Empty {
  
 }; };  // module msg::test_msgs 
  
-#endif  // __test_msgs__msg__Empty__idl 
+#endif

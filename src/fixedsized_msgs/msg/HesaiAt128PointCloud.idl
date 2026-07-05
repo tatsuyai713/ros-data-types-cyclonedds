@@ -1,0 +1,22 @@
+#ifndef __fixedsized_msgs__msg__HesaiAt128PointCloud__idl
+#define __fixedsized_msgs__msg__HesaiAt128PointCloud__idl
+
+#include "FixedHeader.idl"
+#include "FixedPointXYZIRT.idl"
+#include "FixedString32.idl"
+
+module fixedsized_msgs { module msg {
+
+struct HesaiAt128PointCloud {
+    fixedsized_msgs::msg::FixedHeader header;
+    fixedsized_msgs::msg::FixedString32 sensor_model;
+    unsigned long height;
+    unsigned long width;
+    unsigned long point_count;
+    boolean is_dense;
+    fixedsized_msgs::msg::FixedPointXYZIRT points[262144];
+};
+
+}; };  // module msg::fixedsized_msgs
+
+#endif

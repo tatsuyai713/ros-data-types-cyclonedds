@@ -27,4 +27,4 @@ struct SetCameraInfo_Request {
  
 }; };  // module srv::sensor_msgs 
  
-#endif  // __sensor_msgs__srv__SetCameraInfo_Request__idl 
+#endif

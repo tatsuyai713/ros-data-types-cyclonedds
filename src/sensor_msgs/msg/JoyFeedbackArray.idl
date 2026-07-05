@@ -27,4 +27,4 @@ struct JoyFeedbackArray {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__JoyFeedbackArray__idl 
+#endif

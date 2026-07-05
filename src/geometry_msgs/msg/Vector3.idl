@@ -27,4 +27,4 @@ struct Vector3 {
  
 }; };  // module msg::geometry_msgs 
  
-#endif  // __geometry_msgs__msg__Vector3__idl 
+#endif

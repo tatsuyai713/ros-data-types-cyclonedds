@@ -36,4 +36,4 @@ struct DiagnosticStatus {
  
 }; };  // module msg::diagnostic_msgs 
  
-#endif  // __diagnostic_msgs__msg__DiagnosticStatus__idl__ 
+#endif

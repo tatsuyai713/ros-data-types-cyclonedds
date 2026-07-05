@@ -26,5 +26,4 @@ struct Duration {
  
 }; };  // module msg::builtin_interfaces 
  
-#endif  // __builtin_interfaces__msg__Duration__idl 
-
+#endif

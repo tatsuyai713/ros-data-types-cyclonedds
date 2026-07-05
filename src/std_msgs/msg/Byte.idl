@@ -25,4 +25,4 @@ struct Byte {
  
 }; };  // module msg::std_msgs 
  
-#endif  // __std_msgs__msg__Byte__idl 
+#endif

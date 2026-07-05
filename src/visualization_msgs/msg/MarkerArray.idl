@@ -27,4 +27,4 @@ struct MarkerArray {
  
 }; };  // module msg::visualization_msgs 
  
-#endif  // __visualization_msgs__msg__MarkerArray__idl 
+#endif

@@ -36,4 +36,4 @@ struct PointCloud2 {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__PointCloud2__idl 
+#endif

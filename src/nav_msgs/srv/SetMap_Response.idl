@@ -25,4 +25,4 @@ struct SetMap_Response {
  
 }; };  // module srv::nav_msgs 
  
-#endif  // __nav_msgs__srv__SetMap_Response__idl 
+#endif

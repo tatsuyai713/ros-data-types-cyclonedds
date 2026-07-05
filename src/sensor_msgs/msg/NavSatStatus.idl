@@ -35,4 +35,4 @@ struct NavSatStatus {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__NavSatStatus__idl 
+#endif

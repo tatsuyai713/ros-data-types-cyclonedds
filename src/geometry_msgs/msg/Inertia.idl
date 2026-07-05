@@ -34,4 +34,4 @@ struct Inertia {
  
 }; };  // module msg::geometry_msgs 
  
-#endif  // __geometry_msgs__msg__Inertia__idl 
+#endif

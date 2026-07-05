@@ -28,4 +28,4 @@ struct Wrench {
  
 }; };  // module msg::geometry_msgs 
  
-#endif  // __geometry_msgs__msg__Wrench__idl 
+#endif

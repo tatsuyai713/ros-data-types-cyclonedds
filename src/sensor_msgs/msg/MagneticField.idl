@@ -30,4 +30,4 @@ struct MagneticField {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__MagneticField__idl 
+#endif

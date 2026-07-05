@@ -29,4 +29,4 @@ struct AccelWithCovarianceStamped {
  
 }; };  // module msg::geometry_msgs 
  
-#endif  // __geometry_msgs__msg__AccelWithCovarianceStamped__idl 
+#endif

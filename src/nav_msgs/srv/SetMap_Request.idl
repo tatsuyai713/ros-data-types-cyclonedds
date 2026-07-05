@@ -29,4 +29,4 @@ struct SetMap_Request {
  
 }; };  // module srv::nav_msgs 
  
-#endif  // __nav_msgs__srv__SetMap_Request__idl 
+#endif

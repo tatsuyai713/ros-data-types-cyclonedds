@@ -32,4 +32,4 @@ struct MapMetaData {
  
 }; };  // module msg::nav_msgs 
  
-#endif  // __nav_msgs__msg__MapMetaData__idl 
+#endif

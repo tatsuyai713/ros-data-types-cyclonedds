@@ -1,0 +1,16 @@
+#ifndef __fixedsized_msgs__msg__FixedHeader__idl
+#define __fixedsized_msgs__msg__FixedHeader__idl
+
+#include "FixedString64.idl"
+#include "FixedTime.idl"
+
+module fixedsized_msgs { module msg {
+
+struct FixedHeader {
+    fixedsized_msgs::msg::FixedTime stamp;
+    fixedsized_msgs::msg::FixedString64 frame_id;
+};
+
+}; };  // module msg::fixedsized_msgs
+
+#endif

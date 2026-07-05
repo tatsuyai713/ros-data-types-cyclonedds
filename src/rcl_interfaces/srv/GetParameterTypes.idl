@@ -11,4 +11,4 @@ struct GetParameterTypes {
 
 }; };  // module msg::rcl_interfaces 
 
-#endif  // __rcl_interfaces__msg__GetParameterTypes__idl 
+#endif

@@ -84,10 +84,10 @@ foreach(IDL_FILE IN LISTS ORIGINAL_IDL_FILES)
     add_custom_target(generate_${PKG_NAME}_${SUBDIR_NAME}_${IDL_BASENAME}
         COMMAND ${CMAKE_COMMAND} -E make_directory "${GEN_DIR}"
         COMMAND ${CMAKE_COMMAND} -E chdir "${GEN_DIR}"
-                idlc -l cxx -fcase-sensitive
+                ${IDLC_EXECUTABLE} -l cxx -fcase-sensitive
                     ${IDL_INC_ARGS}
                     "${IDL_FILE}"
-        COMMAND sed -E -i "s|(return[[:space:]]*\")([[:alnum:]_]+::${SUBDIR_NAME}::)(${IDL_BASENAME})(\";)|\\1\\2dds_::\\3_\\4|" "${GEN_HPP}"
+        COMMAND ${Python3_EXECUTABLE} "${CMAKE_CURRENT_SOURCE_DIR}/../../scripts/patch_type_name.py" "${GEN_HPP}" "${SUBDIR_NAME}" "${IDL_BASENAME}"
         DEPENDS "${IDL_FILE}"
         COMMENT "Generating ${IDL_BASENAME}"
         VERBATIM
@@ -167,6 +167,7 @@ target_include_directories(gazebo_msgs
 target_link_libraries(gazebo_msgs
     PUBLIC CycloneDDS::ddsc CycloneDDS-CXX::ddscxx Boost::boost
     geometry_msgs
+    trajectory_msgs
     )
 
 target_compile_definitions(gazebo_msgs

@@ -29,4 +29,4 @@ struct Temperature {
  
 }; };  // module msg::sensor_msgs 
  
-#endif  // __sensor_msgs__msg__Temperature__idl 
+#endif

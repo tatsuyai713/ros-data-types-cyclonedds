@@ -30,4 +30,4 @@ struct JointTrajectory {
  
 }; };  // module msg::trajectory_msgs 
  
-#endif  // __trajectory_msgs__msg__JointTrajectory__idl 
+#endif

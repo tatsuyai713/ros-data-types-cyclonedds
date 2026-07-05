@@ -29,4 +29,4 @@ struct Transform {
  
 }; };  // module msg::geometry_msgs 
  
-#endif  // __geometry_msgs__msg__Transform__idl 
+#endif

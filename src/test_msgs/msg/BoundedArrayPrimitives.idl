@@ -39,4 +39,4 @@ struct BoundedArrayPrimitives {
  
 }; };  // module msg::test_msgs 
  
-#endif  // __test_msgs__msg__BoundedArrayPrimitives__idl 
+#endif
