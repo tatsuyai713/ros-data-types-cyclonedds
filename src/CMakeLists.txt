@@ -9,6 +9,23 @@ endif()
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
 find_program(IDLC_EXECUTABLE idlc REQUIRED)
 
+if(APPLE)
+  set(ICEORYX_PREFIX "$ENV{ICEORYX_PREFIX}" CACHE PATH "iceoryx install prefix")
+  if(NOT ICEORYX_PREFIX)
+    set(ICEORYX_PREFIX "/opt/iceoryx" CACHE PATH "iceoryx install prefix" FORCE)
+  endif()
+  set(IDLC_REAL_EXECUTABLE "${IDLC_EXECUTABLE}")
+  set(IDLC_WRAPPER "${CMAKE_BINARY_DIR}/bin/idlc-with-runtime-path")
+  file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+  file(WRITE "${IDLC_WRAPPER}" "#!/usr/bin/env bash\n")
+  file(APPEND "${IDLC_WRAPPER}" "export DYLD_LIBRARY_PATH=\"${ICEORYX_PREFIX}/lib:${CMAKE_INSTALL_PREFIX}/lib:${CMAKE_PREFIX_PATH}:$DYLD_LIBRARY_PATH\"\n")
+  file(APPEND "${IDLC_WRAPPER}" "export LD_LIBRARY_PATH=\"${ICEORYX_PREFIX}/lib:${CMAKE_INSTALL_PREFIX}/lib:$LD_LIBRARY_PATH\"\n")
+  file(APPEND "${IDLC_WRAPPER}" "exec \"${IDLC_REAL_EXECUTABLE}\" \"$@\"\n")
+  file(CHMOD "${IDLC_WRAPPER}"
+       PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
+  set(IDLC_EXECUTABLE "${IDLC_WRAPPER}" CACHE FILEPATH "idlc wrapper with runtime library path" FORCE)
+endif()
+
 add_compile_options(-Wno-narrowing)
 
 add_subdirectory(builtin_interfaces)
